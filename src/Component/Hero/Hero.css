@@ -1,0 +1,206 @@
+.hero {
+  z-index: 3;
+  position: relative;
+}
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero .personal-info {
+  width: 400px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+  padding: 40px 30px;
+  position: sticky;
+  top: -40px;
+}
+
+.personal-info-wrap .personal-info-wrap-img {
+  width: 240px;
+  height: 240px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 21px;
+}
+
+.personal-info-wrap-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.personal-info-wrap h4 {
+  font-size: 26px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 8px;
+}
+.personal-info-wrap h4 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  (max-width: 767px) {
+  .personal-info-wrap h4 {
+    font-size: 22px;
+  }
+}
+.personal-info-wrap .bio {
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f6f6;
+  border-radius: 5px;
+  padding: 4px 20px;
+  margin-bottom: 15px;
+}
+
+.personal-info .personal-info-wrap .social-media {
+  margin-bottom: 30px;
+  width: 100%;
+  padding-left: 0px;
+}
+.personal-info .personal-info-wrap .social-media li {
+  display: inline-block;
+  margin: 0px 4px;
+}
+.personal-info .personal-info-wrap .social-media li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #f3f6f6;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+}
+.personal-info .personal-info-wrap .social-media .facebook i {
+  color: #1773ea;
+}
+.personal-info .personal-info-wrap .social-media .insta i {
+  color: #e12a72;
+}
+.personal-info .personal-info-wrap .social-media .linkdin {
+  color: #144679;
+}
+@media (max-width: 767px) {
+  .hero .personal-info {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    padding: 40px 20px;
+  }
+}
+
+@media only screen and(min-width: 1200px) and (max-width: 1496px) , (min-width: 992px) and (max-width: 1199px),
+  only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero .personal-info {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    top: -40px;
+  }
+}
+
+.personal-info .info-contact {
+  background-color: #f3f6f6;
+  border-radius: 16px;
+  text-align: left;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+}
+.personal-info .info-contact .info-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.info-contact .info-contact-item:not(:first-child) {
+  border-top: 1px solid #e3e3e3;
+}
+.info-contact .info-contact-item .icon {
+  flex: 0 0 auto;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: var(--common-white);
+  border-radius: 8px;
+  text-align: center;
+  line-height: 44px;
+  box-shadow: 0px 4px 6px rgb(0 0 0 / 8%);
+}
+.info-contact .info-contact-item i {
+  font-size: 22px;
+  font-weight: 900;
+}
+.info-contact .info-contact-item.phone i {
+  color: #e93b81;
+}
+.info-contact .info-contact-item .text {
+  display: inline-block;
+}
+.info-contact .info-contact-item .text span {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+.info-contact .info-contact-item .text p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 0;
+}
+
+@media (max-width:380px) {
+  .info-contact .info-contact-item .text p {
+    font-size: 10px;
+  }
+}
+
+.info-contact-item.email .icon i {
+  color: #6ab5b9;
+}
+.info-contact-item.location i {
+  color: #fd7590;
+}
+.info-contact-item.calendar i {
+  color: #c17ceb;
+}
+
+.personal-info-wrap .info-btn a {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: white;
+  background-color: #1b74e4;
+  line-height: 27px;
+  padding: 14px 30px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+.personal-info-wrap .info-btn a:hover {
+  background-color: #f3f6f6;
+  color: black;
+  border: 1px solid #1773ea;
+}
+.personal-info-wrap .info-btn span {
+  display: inline-block;
+  margin-right: 5px;
+}

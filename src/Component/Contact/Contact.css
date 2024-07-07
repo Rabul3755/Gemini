@@ -1,0 +1,133 @@
+.contact-wrapper{
+  padding: 60px 60px 30px 60px;
+}
+
+
+.section-contact-wrappers {
+  margin-bottom: 60px;
+  padding: 0px 60px 60px 60px;
+}
+
+.page-titles {
+  position: relative;
+  display: inline-block;
+}
+.utilty{
+  margin-bottom: 15px;
+}
+.page-titles::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 3px;
+  background-color: #1773ea;
+  left: 120%;
+  top: 50%;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 540px) {
+  .page-titles::after {
+    width: 70%;
+    left: 110%;
+  }
+}
+@media (max-width: 400px) {
+  .page-titles::after {
+    width: 95%;
+    left: 5%;
+    top: 93%;
+    transition: all 0.3s ease-out 0s;
+  }
+}
+
+.contact-area {
+  padding: 60px 45px;
+  border-radius: 20px;
+  background-color: #f8fbfb;
+}
+
+.contact-area .contact-title {
+  font-size: 25px;
+  font-weight: 400;
+  color: #44566c;
+  text-transform: capitalize;
+  margin-bottom: 13px;
+  margin-top: 0px;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-area .contact-title-b {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin-bottom: 45px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  margin-top: 0px;
+  line-height: 1.5;
+}
+
+.form-input-item {
+  margin-bottom: 60px;
+}
+.contact-form .input-lebel {
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 1;
+  color: black;
+  cursor: pointer;
+}
+.contact-form .input-box:is(.height) {
+  height: 40px;
+}
+
+.contact-form .input-box {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #b5b5b5;
+  background: transparent;
+  height: 15px;
+  transition: all 0.3s ease 0s;
+  transform-origin: top;
+  font-size: 14px;
+}
+input[type='text' i] {
+  padding: 1px 2px;
+}
+
+.form-btn {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  text-transform: capitalize;
+  color: #1a1a1a;
+  height: 50px;
+  width: 133px;
+  border: 1px solid #44566c;
+  border-radius: 12px;
+  background-color: #f8fbfb;
+  outline: none;
+}
+.form-btn:hover {
+  background-color: #1b74e4;
+  color: white;
+}
+@media (max-width: 767px) {
+  .contact-area {
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .section-wrappers,
+  .section-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
